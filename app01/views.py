@@ -5,7 +5,7 @@ def index(request):
     x = request.GET
     print(x)
 
-    return render(request, 'hi.html', {'qq':['aa','bb','cc', 'dd']})
+    return render(request, 'h2.html', {'qq':['aa','bb','cc', 'dd']})
 
 def jq1(request):
     print('111')
@@ -20,7 +20,7 @@ def jq1(request):
 
 def jq2(request):
     print('111')
-    x = request.GET
+    x = request.POST
     print(x)
     rt = {
         'qq': '123'
