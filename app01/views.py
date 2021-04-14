@@ -17,3 +17,15 @@ def jq1(request):
     rt1 = json.dumps(rt)
     x = json.dumps(x)
     return HttpResponse(x)
+
+def jq2(request):
+    print('111')
+    x = request.GET
+    print(x)
+    rt = {
+        'qq': '123'
+    }
+    rt1 = json.dumps(rt, ensure_ascii=False)
+    x = json.dumps(x)
+    return HttpResponse(x)
+
